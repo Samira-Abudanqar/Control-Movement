@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Don`t Move</title>
+</head>
+<body>
+	<style>
+	 body{
+	 	background-color: #FAEBD7
+	 }
+	</style>
+<center>
+	<h1>STOP !! </h1>
+	<img src="stop.png" height="120" width="120">
+	<img src="robot.png" height="120" width="120">
+</body>
+</center>
+</html>

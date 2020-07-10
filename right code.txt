@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move Right</title>
+</head>
+<body>
+	<style>
+	 body{
+	 	background-color: #FAEBD7
+	 }
+	</style>
+<center>
+	<h1>Move Right</h1>
+	<img src="right.png" height="120" width="120">
+	<img src="robot.png" height="120" width="120">
+</body>
+</center>
+</html>

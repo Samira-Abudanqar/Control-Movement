@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IOT</title>
+</head>
+<body>
+	<style>
+		body{
+			background-color: #FAEBD7
+		}
+	</style>
+
+<center>
+	<fieldset>
+	<legend><h1>Conrol System for Robot Movement</h1></legend>
+		
+	
+<table>
+	<tr>
+		<td></td>
+		<td> <button><a href="forward.html"><img src="forward.png" width="90" height="90"></a></button></td>
+		<td></td>
+
+	</tr>
+
+	<tr>
+		<td><button><a href="left.html"><img src="left.png" width="90" height="90"></a></button></td>
+		<td><button><a href="stop.html"><img src="stop.png" width="90" height="90"></a></button></td>
+		<td><button><a href="right.html"><img src="right.png" width="90" height="90"></a></button></td>
+
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><button><a href="backward.html"><img src="backward.png" width="90" height="90"></a></button></td>
+		<td></td>
+
+	</tr>
+</table>
+</fieldset>
+</center>
+</body>
+</html>
