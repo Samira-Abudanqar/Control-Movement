@@ -1,0 +1,116 @@
+<?php
+
+ include'connection_db.php';
+?>
+
+<html>
+<head>
+	<title>IOT</title>
+</head>
+<body>
+
+	<style>
+		body{
+			background-color: #FAEBD7
+		}
+	</style>
+
+<center>
+	<fieldset>
+	<legend><h1>Control System for Robot Movement</h1></legend>
+		
+<form action="" method="POST">
+<table>
+	<tr>
+		<td></td>
+		<td> <button name="F"><img src="forward.png" width="90" height="90"></button></td>
+		<td></td>
+
+	</tr>
+
+	<tr>
+		<td><button name="L"><img src="left.png" width="90" height="90"></button></td>
+		<td><button name="S"><img src="stop.png" width="90" height="90"></button></td>
+		<td><button name="R"><img src="right.png" width="90" height="90"></button></td>
+
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><button name="B"><img src="backward.png" width="90" height="90"></button></td>
+		<td></td>
+
+	</tr>
+
+
+
+</fieldset>
+</form>
+</table>
+
+<?php
+if(isset($_POST['F'])){
+
+  $sql = "SELECT Forward FROM control__system ";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+  	while($row=mysqli_fetch_assoc($result)){
+  		echo "Action: ". $row["Forward"];
+  	}
+  }
+}
+
+if(isset($_POST['L'])){
+
+  $sql = "SELECT Move_Left FROM control__system ";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+  	while($row=mysqli_fetch_assoc($result)){
+  		echo "Action: ". $row["Move_Left"];
+  	}
+  }
+}
+
+if(isset($_POST['S'])){
+
+  $sql = "SELECT Stop FROM control__system ";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+  	while($row=mysqli_fetch_assoc($result)){
+  		echo "Action: ". $row["Stop"];
+  	}
+  }
+}
+
+if(isset($_POST['R'])){
+
+  $sql = "SELECT Move_Right FROM control__system ";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+  	while($row=mysqli_fetch_assoc($result)){
+  		echo "Action: ". $row["Move_Right"];
+  	}
+  }
+}
+
+if(isset($_POST['B'])){
+
+  $sql = "SELECT Backward FROM control__system ";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+  	while($row=mysqli_fetch_assoc($result)){
+  		echo "Action: ". $row["Backward"];
+  	}
+  }
+}
+
+
+?>
+</center>
+</body>
+</html>
